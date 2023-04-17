@@ -1,0 +1,19 @@
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /details                  --> tourism/controllers.DetailsCreate (4 handlers)
+[GIN-debug] GET    /details                  --> tourism/controllers.GetAllDetails (4 handlers)
+[GIN-debug] GET    /details/:id              --> tourism/controllers.FindOneDetail (4 handlers)
+[GIN-debug] PATCH  /details/:id              --> tourism/controllers.UpdateDetails (4 handlers)
+[GIN-debug] DELETE /details/:id              --> tourism/controllers.DetailsDelete (4 handlers)
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://pkg.go.dev/github.com/gin-gonic/gin#readme-don-t-trust-all-proxies for details.
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+::1 - [23 Feb 23 11:03 +0545]  POST  /details?Name  401   7.25µs 
+::1 - [23 Feb 23 11:03 +0545]  POST  /details?Name  400   621.084µs 
+::1 - [23 Feb 23 11:04 +0545]  POST  /details?Name  200   11.150083ms 
+[GIN-debug] redirecting request 301: /details --> /details
+::1 - [23 Feb 23 11:04 +0545]  GET  /details  200   1.517792ms 
+::1 - [23 Feb 23 11:04 +0545]  GET  /details  200   1.441917ms 
